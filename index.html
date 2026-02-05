@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="nav">
+    <button class="nav-btn active" data-tab="home">HOME</button>
+    <button class="nav-btn" data-tab="todo">TO-DO</button>
+    <button class="nav-btn" data-tab="inprogress">IN-PROGRESS</button>
+    <button class="nav-btn" data-tab="done">DONE</button>
+  </div>
+
+  <div id="home" class="tab active">
+    <button id="addBtn" class="action-btn">ADD TASK</button>
+  </div>
+
+  <div id="todo" class="tab">
+    <div id="todoList"></div>
+  </div>
+
+  <div id="inprogress" class="tab">
+    <div id="progressList"></div>
+  </div>
+
+  <div id="done" class="tab">
+    <div id="doneList"></div>
+  </div>
+</div>
+
+<!-- ADD POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h2>Add Task</h2>
+    <input id="title" placeholder="Title">
+    <textarea id="desc" placeholder="Description"></textarea>
+    <input id="hours" type="number" placeholder="Hours to finish">
+    <button id="saveBtn" class="save-btn">ADD</button>
+    <button id="closeBtn" class="close-btn">CANCEL</button>
+  </div>
+</div>
+
+<!-- LINK TO THE COMPILED TYPESCRIPT JS -->
+<script src="script.js"></script>
+</body>
+</html>
+
